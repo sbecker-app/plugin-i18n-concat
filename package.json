@@ -1,0 +1,41 @@
+{
+  "name": "plugin-i18n-concat",
+  "version": "1.5.0",
+  "description": "Concat all your i18n files in one file",
+  "main": "build/index.js",
+  "scripts": {
+    "babel": "babel src -d build",
+    "uglify": "uglifyjs build/index.js -o build/index.js -c toplevel,sequences=false",
+    "build": "npm run babel && npm run uglify",
+    "lint": "eslint ./src/*.js; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitamin-lab/plugin-i18n-concat.git"
+  },
+  "keywords": [
+    "webpack",
+    "i18n",
+    "concat"
+  ],
+  "author": "Vitamin-lab: https://github.com/vitamin-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitamin-lab/plugin-i18n-concat/issues"
+  },
+  "homepage": "https://github.com/vitamin-lab/plugin-i18n-concat#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "styled-components": "^3.4.9"
+  }
+}
