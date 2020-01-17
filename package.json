@@ -1,6 +1,6 @@
 {
   "name": "plugin-i18n-concat",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Concat all your i18n files in one file",
   "main": "build/index.js",
   "scripts": {
